@@ -1,0 +1,142 @@
+:root {
+  --primary-color: #8391d7;
+  --secundary-color: #8ca2c0;
+  --button: #486284;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+}
+
+.container {
+  background-color: #ffffff;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--button);
+  font-size: 0.9rem;
+}
+
+.nav-links .btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 2rem;
+}
+
+.section {
+  background-color: rgb(255, 255, 255);
+  padding: 60px 20px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.text-block h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.text-block p {
+  margin-bottom: 40px;
+  color: var(--button);
+}
+
+.text-block a {
+  border-radius: 100px;
+  color: var(--button);
+}
+
+.explore-btn {
+  border: 1px solid var(--button);
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contact-form form {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background-color: rgb(245 245 245);
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #8481cc;
+}
+
+@media (max-width: 768px) {
+ .section-content {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+}
